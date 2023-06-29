@@ -1,6 +1,6 @@
-import { RocketIcon } from "@radix-ui/react-icons";
+"use client";
+import { SunIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
-import { ModeToggle } from "./ui/mode-toggle";
 
 export default function SiteHeader() {
   return (
@@ -11,12 +11,12 @@ export default function SiteHeader() {
             href="/"
             className="mr-6 flex items-center space-x-2"
           >
-            <RocketIcon className="h-6 w-6" />
+            <SunIcon className="h-8 w-8 text-yellow-500 bg-blue-500 rounded p-1" />
             <span className="font-bold dark:text-slate-300 text-slate-900">
-              Qazaq Identity
+              Qazaq Identity Tests
             </span>
           </Link>
-          <ModeToggle />
+          {/* <ModeToggle /> */}
         </div>
       </div>
     </header>
