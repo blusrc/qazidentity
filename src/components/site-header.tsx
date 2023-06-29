@@ -1,4 +1,5 @@
 "use client";
+import { config } from "@/data/site-config";
 import { SunIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
@@ -13,7 +14,7 @@ export default function SiteHeader() {
           >
             <SunIcon className="h-8 w-8 text-yellow-500 bg-blue-500 rounded p-1" />
             <span className="font-bold dark:text-slate-300 text-slate-900">
-              Qazaq Identity Tests
+              {config.title}
             </span>
           </Link>
           {/* <ModeToggle /> */}
