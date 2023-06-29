@@ -31,10 +31,10 @@ const games = [
   },
   {
     id: 3,
-    header: "Сен қандай VIP қазақсың?",
-    description: "Тест",
+    header: "Сен vs Жұрттың Баласы",
+    description: "Мамаң салыстырып болды ма? Енді өзің көр!)",
     img: "/vip.jpg",
-    link: "/",
+    link: "/slider",
   },
 ];
 
