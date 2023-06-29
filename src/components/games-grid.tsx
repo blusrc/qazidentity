@@ -24,10 +24,10 @@ const games = [
   },
   {
     id: 2,
-    header: "Сен қандай той жұлдызысың?",
-    description: "Тест өтіп өзіңнің жұлдызды тұғаңды анықта",
-    img: "/stars.jpg",
-    link: "/",
+    header: "Сен VS Жұрттың баласы",
+    description: "Сен отырғанша әне жұрттың балалары уже ...",
+    img: "/game2.jpg",
+    link: "/slider",
   },
   {
     id: 3,

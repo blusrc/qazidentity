@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const CamryCounter = ({ number }: { number: number }) => {
   const wholeNumber = Math.floor(number);
   const decimalPart = number % 1;
@@ -8,10 +10,12 @@ const CamryCounter = ({ number }: { number: number }) => {
     images.push(
       <div className="bg-slate-100 p-2 rounded">
         <div className="w-full">
-          <img
+          <Image
             src="/camry.png"
             key={`apple-${i}`}
             alt="Camry"
+            width={480}
+            height={240}
           />
         </div>
       </div>

@@ -24,6 +24,11 @@ const Goods: Goods[] = [
     name: "Баран на Құрбан айт",
     price: 70_000,
   },
+  {
+    id: "ғ",
+    name: "Литр нефти",
+    price: 33_625,
+  },
 ];
 
 export default Goods;
