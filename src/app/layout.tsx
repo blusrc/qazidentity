@@ -1,4 +1,5 @@
 import SiteHeader from "@/components/site-header";
+import { config } from "@/data/site-config";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -6,8 +7,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Qazaq Identity Tests",
-  description: "Сіздерде Банк картасымен төлеуге болады ма?",
+  title: config.title,
+  description: config.description,
 };
 
 export default function RootLayout({
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <SiteHeader />
-        <div className="flex-1 p-16">{children}</div>
+        <div className="flex-1 p-4 md:p-16">{children}</div>
       </body>
     </html>
   );

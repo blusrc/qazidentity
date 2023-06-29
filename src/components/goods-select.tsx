@@ -1,7 +1,7 @@
 "use client";
 
 import { PopoverProps } from "@radix-ui/react-popover";
-import { Check, ChevronsUpDown } from "lucide-react";
+import { Check, SearchIcon } from "lucide-react";
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
@@ -73,7 +73,7 @@ export function GoodsSelect({ goods, onSelect, ...props }: GoodsSelectorProps) {
             className="flex-1 justify-between md:max-w-xl lg:max-w-xl"
           >
             {selectedGoods ? selectedGoods.name : "Зат таңдаңыз"}
-            <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+            <SearchIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-[400px] p-0">
@@ -81,30 +81,32 @@ export function GoodsSelect({ goods, onSelect, ...props }: GoodsSelectorProps) {
             <CommandInput placeholder="Іздеу..." />
             <CommandEmpty>Ондай зат табылмады :(</CommandEmpty>
             <CommandGroup heading="Заттар тізімі">
-              {goods.map((item) => (
-                <CommandItem
-                  key={item.id}
-                  onSelect={() => {
-                    setSelectedGoods(item);
-                    setOpen(false);
-                    onSelect(item.price);
-                  }}
-                  className="flex justify-between"
-                >
-                  <span className="max-w-[200px]">{item.name}</span>
-                  <div className="flex gap-4">
-                    <span>{reduceMoneyNumber(item.price)} ₸</span>
-                    <Check
-                      className={cn(
-                        "h-4 w-4",
-                        selectedGoods?.id === item.id
-                          ? "opacity-100"
-                          : "opacity-0"
-                      )}
-                    />
-                  </div>
-                </CommandItem>
-              ))}
+              <div className="h-[240px] overflow-scroll">
+                {goods.map((item) => (
+                  <CommandItem
+                    key={item.id}
+                    onSelect={() => {
+                      setSelectedGoods(item);
+                      setOpen(false);
+                      onSelect(item.price);
+                    }}
+                    className="flex justify-between"
+                  >
+                    <span className="max-w-[200px]">{item.name}</span>
+                    <div className="flex gap-4">
+                      <span>{reduceMoneyNumber(item.price)} ₸</span>
+                      <Check
+                        className={cn(
+                          "h-4 w-4",
+                          selectedGoods?.id === item.id
+                            ? "opacity-100"
+                            : "opacity-0"
+                        )}
+                      />
+                    </div>
+                  </CommandItem>
+                ))}
+              </div>
             </CommandGroup>
           </Command>
         </PopoverContent>
