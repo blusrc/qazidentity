@@ -1,6 +1,7 @@
 "use client";
 import { SliderDemo } from "@/components/sliderthing";
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
 
 const jurtProps = [
   {
@@ -113,6 +114,9 @@ export default function SliderPage() {
   const [sliderValue, setSliderValue] = useState([0]);
   const [jurttynBalasy, setJurttynBalasy] = useState<React.ReactNode>("");
   const [jbState, setJbState] = useState<React.ReactNode | undefined>();
+  useEffect(() => {
+    handleBala(sliderValue);
+  }, []);
 
   function handleChangeSlider(val: number[]) {
     setSliderValue(val);
