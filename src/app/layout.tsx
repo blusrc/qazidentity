@@ -21,6 +21,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <SiteHeader />
         <div className="flex-1 p-4 md:p-16">{children}</div>
+        <div className="p-2 bg-slate-100 bottom-0 container w-full flex justify-center absolute">
+          made with {`<3`} during n! incubator by @blusrc and @inabatron
+        </div>
       </body>
     </html>
   );
