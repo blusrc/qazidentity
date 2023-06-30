@@ -34,7 +34,7 @@ const games = [
     header: "Сен vs Жұрттың Баласы",
     description: "Мамаң салыстырып болды ма? Енді өзің көр!)",
     img: "/you.png",
-    link: "/slider",
+    link: "/starter-pack",
   },
 ];
 
