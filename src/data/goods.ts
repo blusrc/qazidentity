@@ -89,6 +89,11 @@ const Goods: Goods[] = [
     name: "15см 6'Inch",
     price: 990,
   },
+  {
+    id: "18",
+    name: "MX Master 3S Wireless Performance Mouse",
+    price: 70_000,
+  },
 ];
 
 export default Goods;
