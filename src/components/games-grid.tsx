@@ -25,15 +25,15 @@ const games = [
   {
     id: 2,
     header: "Сен VS Жұрттың баласы",
-    description: "Сен отырғанша әне жұрттың балалары уже ...",
+    description: "Мамаң салыстырып болды ма? Енді өзің көр!)",
     img: "/game2.jpg",
     link: "/slider",
   },
   {
     id: 3,
-    header: "Сен vs Жұрттың Баласы",
-    description: "Мамаң салыстырып болды ма? Енді өзің көр!)",
-    img: "/you.png",
+    header: "Starter pack for Qazaq guys",
+    description: "Өзіңе ең жақын қасиеттерді таңдап стартер пак жина",
+    img: "/quiz/costume.png",
     link: "/slider",
   },
 ];
