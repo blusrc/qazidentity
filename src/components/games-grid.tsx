@@ -18,7 +18,7 @@ const games = [
   {
     id: 1,
     header: "Бұл қанша Camry тұрады?",
-    description: "Кең таралған заттардың бағасын Camry-мен салыстыр",
+    description: "Кең таралған заттар бағасын Camry-мен салыстыр",
     img: "/camry-70.webp",
     link: "/camry",
   },
