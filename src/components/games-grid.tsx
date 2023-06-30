@@ -33,7 +33,7 @@ const games = [
     id: 3,
     header: "Сен vs Жұрттың Баласы",
     description: "Мамаң салыстырып болды ма? Енді өзің көр!)",
-    img: "/you.png",
+    img: "/quiz/costume.png",
     link: "/starter-pack",
   },
 ];
