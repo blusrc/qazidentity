@@ -34,14 +34,14 @@ const maleVip: layer[] = [
 const maleBro: layer[] = [
   {
     option: "Traditional",
-    img: "/quiz/сланцы.jpg",
+    img: "/quiz/taqiya.jpg",
     ops: [
       {
         option: "'I need a stay-at-home wife'",
-        img: "/quiz/clown.png",
+        img: "/quiz/clown.jpg",
         ops: [],
       },
-      { option: "Ораза ұстайтын", img: "/quiz/namaz.jpg", ops: [] },
+      { option: "Ораза ұстайтын", img: "/quiz/namaz.webp", ops: [] },
     ],
   },
   {
@@ -68,7 +68,7 @@ const maleHipster: layer[] = [
     img: "/quiz/smokat.jpg",
     ops: [
       { option: "Liberal", img: "/quiz/qg.png", ops: [] },
-      { option: "Night Cluber", img: "/quiz/vape.jpg", ops: [] },
+      { option: "Night Cluber", img: "/quiz/vape.png", ops: [] },
     ],
   },
   {
@@ -92,7 +92,7 @@ const maleHipster: layer[] = [
 const maleNerd: layer[] = [
   {
     option: "Incel",
-    img: "/quiz/smokat.jpg",
+    img: "/quiz/actually.jpg",
     ops: [
       { option: "Waifu", img: "/quiz/daku.webp", ops: [] },
       { option: "Marvel obsessed", img: "/quiz/avg.jpg", ops: [] },
@@ -100,7 +100,7 @@ const maleNerd: layer[] = [
   },
   {
     option: "Gamer",
-    img: "/quiz/alyaska.jpg",
+    img: "/quiz/mouse.jpg",
     ops: [
       { option: "Discord user", img: "/quiz/dis.jpg", ops: [] },
       { option: "PS 5", img: "/quiz/ps5.webp", ops: [] },
@@ -108,7 +108,7 @@ const maleNerd: layer[] = [
   },
   {
     option: "Jojo Enjoyer",
-    img: "/quiz/jojo.jpg",
+    img: "/quiz/jojo.png  ",
     ops: [
       { option: "Ironically", img: "/quiz/jojo.png", ops: [] },
       { option: "Unironically", img: "/quiz/jojo.png", ops: [] },

@@ -97,19 +97,18 @@ export default function QuizComponent({ options }: { options: typeof layer }) {
       </div>
       {l1 >= 0 && l2 >= 0 && l3 >= 0 && l4 >= 0 && (
         <>
-          <span className="text-4xl">
-            Your character:{" "}
-            <span className="font-bold">
-              {`  
+          <div className="border rounded shadow p-8 w-full lg:w-1/2 flex gap-2 flex-col">
+            <span className="text-4xl">
+              <span className="font-bold">
+                {`  
                 ${options[l1].ops[l2].ops[l3].ops[l4].option}
                 ${options[l1].ops[l2].ops[l3].option} 
                 ${options[l1].ops[l2].option}
               `}
+              </span>{" "}
+              starter pack:
             </span>
-          </span>
-          <div className="border rounded shadow p-4 flex gap-2 flex-col">
-            <span className="text-4xl">Your starter pack:</span>
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               {images.slice(1).map((item, i) => (
                 <Image
                   className="rounded shadow"
