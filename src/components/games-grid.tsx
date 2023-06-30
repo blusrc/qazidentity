@@ -18,7 +18,7 @@ const games = [
   {
     id: 1,
     header: "Бұл қанша Camry тұрады?",
-    description: "Кең таралған заттардың бағасы Camry-мен салыстыр",
+    description: "Кең таралған заттар бағасын Camry-мен салыстыр",
     img: "/camry-70.webp",
     link: "/camry",
   },
@@ -31,8 +31,8 @@ const games = [
   },
   {
     id: 3,
-    header: "Сен vs Жұрттың Баласы",
-    description: "Мамаң салыстырып болды ма? Енді өзің көр!)",
+    header: "What VIP Kazakh are you?",
+    description: "Батырханчик па? Айка ма?",
     img: "/quiz/costume.png",
     link: "/starter-pack",
   },
