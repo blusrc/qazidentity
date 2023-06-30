@@ -4,166 +4,110 @@ import { useState } from "react";
 
 const jurtProps = [
   {
+    val: 0,
+    descYou: "Гугу-гага дедің",
+    descJB: "Абайдың қара сөздерін жатқа айтып береді",
+    imageName: "meme_0.jpeg"
+  },
+  {
     val: 5,
-    desc: (
-      <>
-        <div>Сен: Мектеп табалдырығын аттадың</div>
-        <div>Жұрттың баласы: Сені оқуға қабылдаған мұғалім</div>
-      </>
-    ),
+    descYou: "Мектеп табалдырығын аттадың",
+    descJB: "Сені оқуға қабылдаған мұғалім",
+    imageName: "meme_5.jpeg"
   },
   {
     val: 10,
-    desc: (
-      <>
-        <div>Сен: бастауыш мектепті бітірдің </div>
-        <div>Жұрттың баласы: Математикадан олимпиада жазып, IMO-ға өтті</div>
-      </>
-    ),
+    descYou: "Бастауыш мектепті бітірдің",
+    descJB: "Математикадан олимпиада жазып, IMO-ға өтті",
+    imageName: "meme_10.jpeg"
   },
   {
     val: 15,
-    desc: (
-      <>
-        <div>Сен: алғашқы махаббатың басқаға кетіп қалды</div>
-        <div>Жұрттың баласы: *басқа бала*</div>
-      </>
-    ),
+    descYou: "Алғашқы махаббатың басқаға кетіп қалды",
+    descJB: "*басқа бала*",
+    imageName: "meme_15.jpg"
   },
   {
     val: 20,
-    desc: (
-      <>
-        <div>Сен: алғашқы рет nFactorial-ға келдің</div>
-        <div>
-          Жұрттың баласы: уже 15-те барлық nFactorial курстарын бітіріп тастаған{" "}
-        </div>
-      </>
-    ),
+    descYou: "Алғашқы рет nFactorial-ға келдің",
+    descJB: "Уже 15 жасында барлық nFactorial курстарын бітіріп тастаған",
+    imageName: "meme_20.jpeg"
   },
   {
     val: 25,
-    desc: (
-      <>
-        <div>Сен: тұрақты жұмысқа тұрдың</div>
-        <div>
-          Жұрттың баласы: Алматыдан он пәтер сатып алып, жалға береді-
-          миллиардер
-        </div>
-      </>
-    ),
+    descYou: "Тұрақты жұмысқа тұрдың",
+    descJB: "Алматыдан он пәтер сатып алып, жалға береді-миллиардер",
+    imageName: "meme_25.jpeg"
   },
   {
     val: 30,
-    desc: (
-      <>
-        <div>Сен: отбасын құрдың</div>
-        <div>Жұрттың баласы: баласы мектеп бітірді</div>
-      </>
-    ),
+    descYou: "Отбасын құрдың",
+    descJB: "Баласы мектеп бітірді",
+    imageName: "meme_30.jpg"
   },
   {
     val: 35,
-    desc: (
-      <>
-        <div>Сен: алғашқы бизнесіңді аштың</div>
-        <div>Жұрттың баласы: сенің бизнесіңе инвестор болды</div>
-      </>
-    ),
+    descYou: "Алғашқы бизнесіңді аштың",
+    descJB: "Сенің бизнесіңе Кремний алқабынан инвестиция жіберді",
+    imageName: "meme_35.jpg"
   },
   {
     val: 40,
-    desc: (
-      <>
-        <div>Сен: ата-анаңды бір рет Меккеге апарып келдің</div>
-        <div>
-          Жұрттың баласы: ата-анасын Меккеге бес рет арқалап апарып келді
-        </div>
-      </>
-    ),
+    descYou: "Ата-анаңды бір рет Меккеге апарып келдің",
+    descJB: "Ата-анасын Меккеге бес рет арқалап апарып келді",
+    
   },
   {
     val: 45,
-    desc: (
-      <>
-        <div>Сен: </div>
-        <div>Жұрттың баласы: </div>
-      </>
-    ),
+    descYou: "Бақшаңда картоп өсіресің, түк өспейді",
+    descJB: "Екпеген егіні құлпырып өседі",
+    imageName: "meme_45.jpeg"
   },
   {
     val: 50,
-    desc: (
-      <>
-        <div>Сен: креслодан тұрсаң тізең ауырады</div>
-        <div>
-          Жұрттың баласы: жеті айронмен өтіп тастады, ультрамарафон жүгіреді
-        </div>
-      </>
-    ),
+    descYou: "Креслодан тұрсаң тізең ауырады",
+    descJB: "Жеті айронмен өтіп тастады, ультрамарафон жүгіреді",
+    imageName: "meme_50.jpeg"
   },
   {
     val: 55,
-    desc: (
-      <>
-        <div>Сен: демалысқа Қапшағайға барып келдің</div>
-        <div>Жұрттың баласы: тұрақты түрде демалуға Марсқа ұшып тұрады</div>
-      </>
-    ),
+    descYou: "Демалысқа Қапшағайға барасың",
+    descJB: "Тұрақты түрде демалуға Марсқа ұшып тұрады",
+    imageName: "meme_55.jpeg"
   },
   {
     val: 60,
-    desc: (
-      <>
-        <div>Сен: подъезд кеңесіне кірдің</div>
-        <div>
-          Жұрттың баласы: подъезд кеңесінің басшысы, ремонтқа ақша жинап жүр
-        </div>
-      </>
-    ),
+    descYou: "Подъезд кеңесіне кірдің",
+    descJB: "Подъезд кеңесінің басшысы, ремонтқа ақша жинап жүр",
+    imageName: "meme_60.jpg"
   },
   {
     val: 65,
-    desc: (
-      <>
-        <div>Сен: алғаш рет зейнетақы алдың</div>
-        <div>
-          Жұрттың баласы: 30-да зейнетақыға шығып кетіп, содан бері жұмыс
-          істемейді
-        </div>
-      </>
-    ),
+    descYou: "Алғаш рет зейнетақы алдың",
+    descJB: "30-да зейнетақыға шығып кетіп, содан бері жұмыс істемейді",
+    imageName: "meme_65.jpeg"
   },
   {
     val: 70,
-    desc: (
-      <>
-        <div>Сен: Немере сүйдің </div>
-        <div>Жұрттың баласы: Шөбере, шепшек, немене сүйіп қойған </div>
-      </>
-    ),
+    descYou: "Немере сүйдің",
+    descJB: "Шөбере, шепшек, немене сүйіп қойған, әрқайсысы бөлек жұрттың баласы",
+    imageName: "meme_70.jpg"
   },
   {
     val: 75,
-    desc: (
-      <>
-        <div>Сен: Ауылдың тойларына барасың</div>
-        <div>Жұрттың баласы: Ауылдың тойларында бата береді</div>
-      </>
-    ),
+    descYou: "Ауылдың тойларына барасың",
+    descJB: "Ауылдың тойларында бата береді",
+    imageName: "meme_75.jpeg"
   },
   {
     val: 80,
-    desc: (
-      <>
-        <div>Сен: Немерелеріңе ақыл айтасың</div>
-        <div>
-          Жұрттың баласы: Подкаст ашып алған, бар әлем немерелеріне ақыл айтады
-        </div>
-      </>
-    ),
+    descYou: "Немерелеріңе ақыл айтасың",
+    descJB: "Подкаст ашып алған, бар әлем немерелеріне ақыл айтады",
+    imageName: "meme_80.jpeg"
   },
 ];
+
+
 
 export default function SliderPage() {
   const [sliderValue, setSliderValue] = useState([0]);
@@ -174,28 +118,40 @@ export default function SliderPage() {
     setSliderValue(val);
     handleBala(val);
   }
-  function handleBala(val: number[]) {
+  
+  const handleBala = (val: number[]) => {
     const matchingProp = jurtProps.find((prop) => prop.val === val[0]);
     if (matchingProp) {
-      setJurttynBalasy(matchingProp.desc);
-      // setJbState(matchingProp.img);
+      setJurttynBalasy(
+        <>
+          <div className="10px">Сен: {matchingProp.descYou}</div>
+          <div className="text-lg font-bold">Жұрттың баласы: {matchingProp.descJB}</div>
+        </>
+      );
+      if (matchingProp.imageName) {
+        setJbState(<img src={`${matchingProp.imageName}`} alt="Description" />);
+      } else {
+        setJbState(undefined);
+      }
     } else {
       setJurttynBalasy("");
+      setJbState(undefined);
     }
-  }
+  };
 
   return (
     <div>
       <div className="flex items-center flex-col gap-4">
-        {jbState}
-        {sliderValue}
-
-        <SliderDemo
-          defaultValue={[0]}
-          onValueChange={handleChangeSlider}
-        />
+        <div className="text-xl font-bold">{sliderValue} жаста</div>
+        <SliderDemo defaultValue={[0]} onValueChange={handleChangeSlider} />
         {jurttynBalasy}
+        {jurttynBalasy && (
+          <div>
+            {jbState && <div>{jbState}</div>}
+          </div>
+        )}
       </div>
     </div>
   );
 }
+
