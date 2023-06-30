@@ -25,7 +25,7 @@ const games = [
   {
     id: 2,
     header: "Сен VS Жұрттың баласы",
-    description: "Сен отырғанша әне жұрттың балалары уже ...",
+    description: "Мамаң салыстырып болды ма? Енді өзің көр!)",
     img: "/game2.jpg",
     link: "/slider",
   },
