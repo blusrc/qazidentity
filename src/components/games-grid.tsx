@@ -31,7 +31,7 @@ const games = [
   },
   {
     id: 3,
-    header: "What VIP Kazakh are you?",
+    header: "Qazaq guy starter pack",
     description: "Батырханчик па? Айка ма?",
     img: "/quiz/costume.png",
     link: "/starter-pack",
