@@ -53,20 +53,20 @@ const jurtProps = [
   },
   {
     val: 40,
-    descYou: "Ата-анаңды бір рет Меккеге апарып келдің",
+    descYou: "Ата-анаңды мешітке апарып келдің",
     descJB: "Ата-анасын Меккеге бес рет арқалап апарып келді",
-    
+    imageName: "meme_40.jpg"
   },
   {
     val: 45,
-    descYou: "Бақшаңда картоп өсіресің, түк өспейді",
+    descYou: "Бақшаңда картоп егесің, түк өспейді",
     descJB: "Екпеген егіні құлпырып өседі",
     imageName: "meme_45.jpeg"
   },
   {
     val: 50,
     descYou: "Креслодан тұрсаң тізең ауырады",
-    descJB: "Жеті айронмен өтіп тастады, ультрамарафон жүгіреді",
+    descJB: "Жеті Ironman өтіп тастады, ультрамарафон жүгіреді",
     imageName: "meme_50.jpeg"
   },
   {
@@ -124,8 +124,8 @@ export default function SliderPage() {
     if (matchingProp) {
       setJurttynBalasy(
         <>
-          <div className="10px">Сен: {matchingProp.descYou}</div>
-          <div className="text-lg font-bold">Жұрттың баласы: {matchingProp.descJB}</div>
+          <div className="10px text-4xl">Сен: {matchingProp.descYou}</div>
+          <div className="font-bold text-4xl text-center">Жұрттың баласы: {matchingProp.descJB}</div>
         </>
       );
       if (matchingProp.imageName) {
