@@ -48,7 +48,7 @@ const maleBro: layer[] = [
     option: "Politics",
     img: "/quiz/сланцы.jpg",
     ops: [
-      { option: "Tokayev defender", img: "/quiz/madi.png", ops: [] },
+      { option: "Tokayev defender", img: "/quiz/madi.jpg", ops: [] },
       { option: "Latent Socialist", img: "/quiz/ussr.jpg", ops: [] },
     ],
   },
@@ -108,7 +108,7 @@ const maleNerd: layer[] = [
   },
   {
     option: "Jojo Enjoyer",
-    img: "/quiz/jojo.png  ",
+    img: "/quiz/jojo.png",
     ops: [
       { option: "Ironically", img: "/quiz/jojo.png", ops: [] },
       { option: "Unironically", img: "/quiz/jojo.png", ops: [] },
